@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
+
+:root {
+  --inter-family: 'Inter', sans-serif;
+  --prata-family: 'Prata', serif;
+}
