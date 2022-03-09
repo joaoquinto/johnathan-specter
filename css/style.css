@@ -21,6 +21,17 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
 
 :root {
-  --inter-family: 'Inter', sans-serif;
-  --prata-family: 'Prata', serif;
+  --inter-family-paragraph: 'Inter', sans-serif;
+  --prata-family-heading: 'Prata', serif;
+  --bg-body: #0a0a0b;
+  --bg-button: #fbe850;
+  --color-button: #000000;
+  --bg-information: #2e3038;
+  --bg-footer: #2e3038;
+  --color-heading: #ffffff;
+  --color-paragraph: #adadad;
+}
+
+body {
+  background-color: var(--bg-body);
 }
