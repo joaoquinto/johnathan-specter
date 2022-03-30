@@ -35,3 +35,125 @@ a {
 body {
   background-color: var(--bg-body);
 }
+
+.container-header{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  font-size: 1.25rem;
+}
+
+.logo{
+  color: var(--color-heading);
+  font-family: var(--prata-family-heading);
+}
+
+.container-header .logo{
+  margin-bottom: 10px;
+}
+
+.container-links li{
+  margin-bottom: 10px;
+}
+
+.container-links a{
+  color: var(--color-paragraph);
+  font-family: var(--inter-family-paragraph);
+  font-size: 1rem;
+  transition: color .1s;
+}
+
+
+.container-links a:hover{
+  color: #ffffff;
+}
+
+.call-to-action{
+  color: #000000;
+  background-color: var(--bg-button);
+  padding: 10px 15px;
+  font-family: var(--prata-family-heading);
+}
+
+#container-introducao{
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#container-introducao #title{
+  font-family: var(--prata-family-heading);
+  font-weight: normal;
+  font-size: 2.3rem;
+  color: var(--color-heading);
+  margin-bottom: 20px;
+}
+
+#container-introducao #paragrafo{
+  font-family: var(--inter-family-paragraph);
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  color: var(--color-paragraph);
+}
+
+.container-cards{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.container-cards .container-item {
+  margin: 30px 10px;
+  flex: 0 0 calc(100% - 20px);
+  }
+
+@media (min-width:1000px) {
+  .container-header{
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 40px auto 40px auto;
+  }
+ .container-links{
+    display: flex;
+  }
+
+ .container-links li + li{
+    margin-left: 35px;
+  }
+
+  #container-introducao #title{
+    font-size: 3rem;
+    width: 60%;
+  }
+  
+  #container-introducao #paragrafo{
+    font-size: 1.5rem;
+    width: 60%;
+  }
+
+}
+
+@media (min-width:900px) {
+  .container-cards{
+    display: flex;
+    flex-direction: row;
+    margin:  0 auto;
+    flex-wrap: wrap;
+    width: 80%;
+   
+    }
+  
+    .container-cards .container-item {
+    margin: 0 10px 30px 10px;
+    flex: 0 0 calc(33.3333% - 20px);
+    }
+  
+}
