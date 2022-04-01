@@ -297,11 +297,6 @@ footer .logo {
     align-self: flex-end;
   }
 
-  /* Desce a img, modificar depois */
-  #container-marcas .visa {
-    margin-bottom: -17px;
-  }
-
   .container-item + .container-item {
     margin-top: 0px;
   }
