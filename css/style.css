@@ -79,8 +79,7 @@ body {
   background-color: var(--bg-button);
   padding: 10px 15px;
   font-family: var(--prata-family-heading);
-  width: 128.88px;
-  height: 40px;
+  
 }
 
 #container-introducao {
@@ -155,7 +154,7 @@ body {
 }
 
 .container-item-projetos .title-projeto {
-  font-size: 2.5pc;
+  font-size: 2.2pc;
   font-family: var(--prata-family-heading);
   font-weight: normal;
   margin: 20px 0;
@@ -171,8 +170,9 @@ body {
 
 .container-item-projetos .title-projeto::after {
   content: '→';
+  font-size: 25px;
   color: #fff;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .container-item-projetos .title-projeto a {
@@ -257,6 +257,8 @@ body {
 
 #call-to-action .call-to-action {
   text-align: center;
+  max-width: 128.88px;
+  max-height: 43px;
 }
 
 footer {
