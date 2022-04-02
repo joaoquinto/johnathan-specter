@@ -89,7 +89,7 @@ body {
   flex-direction: column;
 }
 
-#container-introducao #title {
+#container-introducao #title-introducao {
   font-family: var(--prata-family-heading);
   font-weight: normal;
   font-size: 2.3pc;
@@ -201,7 +201,7 @@ body {
   margin: 0 auto;
 }
 
-#informacao #title {
+#informacao #title-informacao {
   color: var(--color-heading);
   font-family: var(--prata-family-heading);
   font-weight: normal;
@@ -213,6 +213,7 @@ body {
 .container p {
   color: var(--color-paragraph);
   font-family: var(--inter-family-paragraph);
+  font-weight: normal;
   font-size: 1.3pc;
 }
 
