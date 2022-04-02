@@ -259,7 +259,6 @@ body {
 #call-to-action .call-to-action {
   text-align: center;
   max-width: 128.88px;
-  max-height: 43px;
 }
 
 footer {
@@ -297,11 +296,6 @@ footer .logo {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-  }
-
-  /* Desce a img, modificar depois */
-  #container-marcas .visa {
-    margin-bottom: -17px;
   }
 
   .container-item + .container-item {
