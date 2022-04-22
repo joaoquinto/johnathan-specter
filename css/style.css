@@ -36,6 +36,45 @@ body {
   background-color: var(--bg-body);
 }
 
+#toolkit {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#toolkit > .button-toolkit {
+  margin-bottom: 10px;
+}
+
+.container-toolkit {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ativo {
+  display: flex;
+}
+
+.disable {
+  visibility: hidden;
+  display: none;
+}
+
+.container-toolkit li + li {
+  margin-top: 10px;
+}
+
+.button-toolkit {
+  background-color: var(--bg-button);
+  font-weight: 900;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
 .container-header {
   width: 80%;
   display: flex;
@@ -79,7 +118,6 @@ body {
   background-color: var(--bg-button);
   padding: 10px 15px;
   font-family: var(--prata-family-heading);
-  
 }
 
 #container-introducao {
@@ -352,6 +390,16 @@ footer .logo {
 }
 
 @media (min-width: 1000px) {
+  .container-toolkit {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container-toolkit li + li {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
   .container-header {
     width: 80%;
     flex-direction: row;
