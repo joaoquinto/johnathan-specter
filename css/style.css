@@ -73,6 +73,9 @@ body {
   border: none;
   padding: 5px;
   cursor: pointer;
+  font-family: var(--prata-family-heading);
+  font-size: 1pc;
+  
 }
 
 .container-header {
@@ -82,12 +85,22 @@ body {
   align-items: center;
   margin: 40px auto;
   font-size: 1.25rem;
+  position: relative;
 }
 
 .logo {
   color: var(--color-heading);
   font-family: var(--prata-family-heading);
   transition: color 0.1s;
+  align-self: flex-start;
+}
+
+.hamburguer{
+  background-color:transparent;
+  border: none;
+  align-self: flex-end;
+  position: absolute;
+  transition: .1s ;
 }
 
 .logo:hover {
@@ -97,6 +110,12 @@ body {
 .container-header .logo {
   margin-bottom: 10px;
 }
+
+.hidden{
+  display: none;
+}
+
+
 
 .container-links li {
   margin-bottom: 10px;
@@ -390,6 +409,12 @@ footer .logo {
 }
 
 @media (min-width: 1000px) {
+
+  .hamburguer{
+    display: none;
+    visibility: hidden;
+  }
+
   .container-toolkit {
     flex-direction: row;
     align-items: center;
