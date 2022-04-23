@@ -52,15 +52,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 80%;
 }
 
 .ativo {
   display: flex;
-}
-
-.disable {
-  visibility: hidden;
-  display: none;
 }
 
 .container-toolkit li + li {
@@ -75,7 +71,6 @@ body {
   cursor: pointer;
   font-family: var(--prata-family-heading);
   font-size: 1pc;
-  
 }
 
 .container-header {
@@ -88,6 +83,11 @@ body {
   position: relative;
 }
 
+.container-header > .call-to-action {
+  display: none;
+  visibility: hidden;
+}
+
 .logo {
   color: var(--color-heading);
   font-family: var(--prata-family-heading);
@@ -95,12 +95,12 @@ body {
   align-self: flex-start;
 }
 
-.hamburguer{
-  background-color:transparent;
+.hamburguer {
+  background-color: transparent;
   border: none;
   align-self: flex-end;
   position: absolute;
-  transition: .1s ;
+  cursor: pointer;
 }
 
 .logo:hover {
@@ -111,11 +111,13 @@ body {
   margin-bottom: 10px;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-
+.container-links {
+  transition: 0.1s;
+}
 
 .container-links li {
   margin-bottom: 10px;
@@ -409,8 +411,7 @@ footer .logo {
 }
 
 @media (min-width: 1000px) {
-
-  .hamburguer{
+  .hamburguer {
     display: none;
     visibility: hidden;
   }
@@ -432,6 +433,12 @@ footer .logo {
     align-items: baseline;
     margin: 40px auto 40px auto;
   }
+
+  .container-header > .call-to-action {
+    display: block;
+    visibility: initial;
+  }
+
   .container-links {
     display: flex;
   }

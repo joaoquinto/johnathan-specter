@@ -1,5 +1,13 @@
-import { espacamentoLetras } from "./modules/aumentarEspacamento.js";
-import { fontSize, resetarFonte } from "./modules/aumentarFonte.js";
+import {
+  espacamentoLetras,
+  resetarEspacamento
+} from "./modules/aumentarEspacamento.js";
+
+import {
+  fontSize,
+  resetarFonte
+} from "./modules/aumentarFonte.js";
+
 import menuHamburguer from "./modules/hamburguer.js";
 
 import show from "./modules/showToolkit.js";
@@ -9,3 +17,4 @@ fontSize;
 resetarFonte;
 menuHamburguer;
 espacamentoLetras;
+resetarEspacamento
