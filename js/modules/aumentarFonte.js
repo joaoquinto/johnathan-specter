@@ -1,6 +1,6 @@
 const fontSizeButton = document.querySelector('#fontSize')
 const resetarFonteButton = document.querySelector('#resetarFonte')
-const tags = ['h1', 'h2', 'p']
+const tags = ['h1', 'h2', 'p', 'button']
 
 let validator = 0;
 
