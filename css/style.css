@@ -36,6 +36,43 @@ body {
   background-color: var(--bg-body);
 }
 
+#toolkit {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#toolkit > .button-toolkit {
+  margin-bottom: 10px;
+}
+
+.container-toolkit {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.ativo {
+  display: flex;
+}
+
+.container-toolkit li + li {
+  margin-top: 10px;
+}
+
+.button-toolkit {
+  background-color: var(--bg-button);
+  font-weight: 900;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-family: var(--prata-family-heading);
+  font-size: 1pc;
+}
+
 .container-header {
   width: 80%;
   display: flex;
@@ -43,12 +80,27 @@ body {
   align-items: center;
   margin: 40px auto;
   font-size: 1.25rem;
+  position: relative;
+}
+
+.container-header > .call-to-action {
+  display: none;
+  visibility: hidden;
 }
 
 .logo {
   color: var(--color-heading);
   font-family: var(--prata-family-heading);
   transition: color 0.1s;
+  align-self: flex-start;
+}
+
+.hamburguer {
+  background-color: transparent;
+  border: none;
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
 }
 
 .logo:hover {
@@ -57,6 +109,14 @@ body {
 
 .container-header .logo {
   margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.container-links {
+  transition: 0.1s;
 }
 
 .container-links li {
@@ -79,7 +139,6 @@ body {
   background-color: var(--bg-button);
   padding: 10px 15px;
   font-family: var(--prata-family-heading);
-  
 }
 
 #container-introducao {
@@ -352,6 +411,21 @@ footer .logo {
 }
 
 @media (min-width: 1000px) {
+  .hamburguer {
+    display: none;
+    visibility: hidden;
+  }
+
+  .container-toolkit {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container-toolkit li + li {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
   .container-header {
     width: 80%;
     flex-direction: row;
@@ -359,6 +433,12 @@ footer .logo {
     align-items: baseline;
     margin: 40px auto 40px auto;
   }
+
+  .container-header > .call-to-action {
+    display: block;
+    visibility: initial;
+  }
+
   .container-links {
     display: flex;
   }
