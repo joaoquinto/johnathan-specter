@@ -20,6 +20,10 @@ Uma UI de um portfólio de projetos.
 
 <img src="./Assets/screenshots/mobile.png" width="400px">
 
+### Tablet Screenshot
+
+<img src="./Assets/screenshots/tablet.png" width="800px">
+
 ### Desktop Screenshot
 
 <img src="./Assets/screenshots/desktop.png" width="1000px">
