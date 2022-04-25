@@ -9,6 +9,7 @@ import {
 } from "./modules/aumentarFonte.js";
 
 import menuHamburguer from "./modules/hamburguer.js";
+import { highLights } from "./modules/highLights.js";
 
 import show from "./modules/showToolkit.js";
 
@@ -18,3 +19,4 @@ resetarFonte;
 menuHamburguer;
 espacamentoLetras;
 resetarEspacamento
+highLights
